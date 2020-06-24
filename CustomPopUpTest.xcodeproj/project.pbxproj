@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35976410926AE991BE7BE31F /* Pods_CustomPopUpTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A4E1054A95CECDD0BB345C /* Pods_CustomPopUpTest.framework */; };
 		F352043D2492CE1100304659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F352043C2492CE1100304659 /* AppDelegate.swift */; };
 		F352043F2492CE1100304659 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F352043E2492CE1100304659 /* SceneDelegate.swift */; };
 		F35204412492CE1100304659 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35204402492CE1100304659 /* ViewController.swift */; };
 		F35204442492CE1100304659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35204422492CE1100304659 /* Main.storyboard */; };
 		F35204462492CE1300304659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35204452492CE1300304659 /* Assets.xcassets */; };
 		F35204492492CE1300304659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35204472492CE1300304659 /* LaunchScreen.storyboard */; };
+		F35204512492CF5900304659 /* MyPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35204502492CF5900304659 /* MyPopUpView.swift */; };
+		F35204532492CF8900304659 /* SmallPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35204522492CF8900304659 /* SmallPopUpView.swift */; };
+		F35204552492CFB900304659 /* UIView+Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35204542492CFB800304659 /* UIView+Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14A4E1054A95CECDD0BB345C /* Pods_CustomPopUpTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomPopUpTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66B114BC4C3BE1FA0E670760 /* Pods-CustomPopUpTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomPopUpTest.debug.xcconfig"; path = "Target Support Files/Pods-CustomPopUpTest/Pods-CustomPopUpTest.debug.xcconfig"; sourceTree = "<group>"; };
+		EF3101604536AD724F824AAA /* Pods-CustomPopUpTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomPopUpTest.release.xcconfig"; path = "Target Support Files/Pods-CustomPopUpTest/Pods-CustomPopUpTest.release.xcconfig"; sourceTree = "<group>"; };
 		F35204392492CE1100304659 /* CustomPopUpTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPopUpTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F352043C2492CE1100304659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F352043E2492CE1100304659 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		F35204452492CE1300304659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F35204482492CE1300304659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F352044A2492CE1300304659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F35204502492CF5900304659 /* MyPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPopUpView.swift; sourceTree = "<group>"; };
+		F35204522492CF8900304659 /* SmallPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPopUpView.swift; sourceTree = "<group>"; };
+		F35204542492CFB800304659 /* UIView+Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Message.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35976410926AE991BE7BE31F /* Pods_CustomPopUpTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160EE3EE42F31C9306ECC883 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66B114BC4C3BE1FA0E670760 /* Pods-CustomPopUpTest.debug.xcconfig */,
+				EF3101604536AD724F824AAA /* Pods-CustomPopUpTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9210F97789D1649B2665C01F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14A4E1054A95CECDD0BB345C /* Pods_CustomPopUpTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F35204302492CE1100304659 = {
 			isa = PBXGroup;
 			children = (
 				F352043B2492CE1100304659 /* CustomPopUpTest */,
 				F352043A2492CE1100304659 /* Products */,
+				160EE3EE42F31C9306ECC883 /* Pods */,
+				9210F97789D1649B2665C01F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +89,9 @@
 				F352043C2492CE1100304659 /* AppDelegate.swift */,
 				F352043E2492CE1100304659 /* SceneDelegate.swift */,
 				F35204402492CE1100304659 /* ViewController.swift */,
+				F35204502492CF5900304659 /* MyPopUpView.swift */,
+				F35204522492CF8900304659 /* SmallPopUpView.swift */,
+				F35204542492CFB800304659 /* UIView+Message.swift */,
 				F35204422492CE1100304659 /* Main.storyboard */,
 				F35204452492CE1300304659 /* Assets.xcassets */,
 				F35204472492CE1300304659 /* LaunchScreen.storyboard */,
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F352044D2492CE1300304659 /* Build configuration list for PBXNativeTarget "CustomPopUpTest" */;
 			buildPhases = (
+				A90D0D2A27212C600C18957D /* [CP] Check Pods Manifest.lock */,
 				F35204352492CE1100304659 /* Sources */,
 				F35204362492CE1100304659 /* Frameworks */,
 				F35204372492CE1100304659 /* Resources */,
+				BCD816CB67F09994CFD54ECF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +168,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A90D0D2A27212C600C18957D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomPopUpTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCD816CB67F09994CFD54ECF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomPopUpTest/Pods-CustomPopUpTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomPopUpTest/Pods-CustomPopUpTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomPopUpTest/Pods-CustomPopUpTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F35204352492CE1100304659 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35204532492CF8900304659 /* SmallPopUpView.swift in Sources */,
 				F35204412492CE1100304659 /* ViewController.swift in Sources */,
+				F35204512492CF5900304659 /* MyPopUpView.swift in Sources */,
 				F352043D2492CE1100304659 /* AppDelegate.swift in Sources */,
+				F35204552492CFB900304659 /* UIView+Message.swift in Sources */,
 				F352043F2492CE1100304659 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +362,7 @@
 		};
 		F352044E2492CE1300304659 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66B114BC4C3BE1FA0E670760 /* Pods-CustomPopUpTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +381,7 @@
 		};
 		F352044F2492CE1300304659 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF3101604536AD724F824AAA /* Pods-CustomPopUpTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
